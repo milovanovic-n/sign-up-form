@@ -48,3 +48,155 @@ table {
   box-sizing: border-box;
 }
 /* END OF RESET */
+
+@font-face {
+	font-family: Norse;
+	src: url('./assets/Norse-Bold.otf');
+}
+
+@font-face {
+	font-family: Norse;
+	font-weight: bold;
+	src: url('./assets/Norse-Bold.otf');
+}
+
+:root {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333;
+}
+
+/* Wrapper */
+.wrapper {
+	display: flex;
+	align-items: center;
+	height: 700px;
+	max-width: 90%;
+	border-radius: 1rem;
+	box-shadow: 0 0 15px 2px #DDD;
+	overflow: hidden;
+}
+
+/* Left */
+.left {
+	background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 35%;
+}
+
+.logo {
+	margin-top: 30%;
+	background: rgba(0, 0, 0, .5);
+	height: 150px;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: Norse;
+	font-size: 3rem;	
+}
+
+.logo img {
+	max-height: 100%;
+}
+
+/* Right */
+.right {
+	height: 100%;
+	max-width: 65%;
+	background-color: #FAFAFA;	
+}
+
+.description {
+	padding: 3rem 2rem;
+	display: flex;
+	flex-direction: column;
+	height: 33%;
+	justify-content: space-around;
+	font-size: 1.25rem;
+	font-weight: 600;
+	width: 90%;
+}
+
+form {
+	height: 77%;
+}
+
+.formContainer {
+	background-color: #FFF;
+	padding: 2rem 2rem;
+	box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 3rem;
+}
+
+.formContainer p {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+fieldset {
+	border: none;
+	display: flex;
+	gap: 3rem;
+}
+
+.formCell {
+	display: flex;
+	flex-direction: column;
+	text-transform: uppercase;
+	width: 33%;
+}
+
+.formCell label {
+	font-size: 0.7rem;
+	font-weight: 500;
+}
+
+.formCell label::after {
+	content: "*";
+	color: #be0101;
+}
+
+form input {
+	border: 1px solid #D6D9DC;
+	border-radius: 4px;
+	padding: 7px;
+	font-size: 14px;
+}
+
+.buttonArea {
+	padding-left: 2rem;
+}
+
+.buttonArea a {
+	color: #596D48;
+	text-decoration: none;
+}
+
+button {
+	background-color: #596D48;
+	border: none;
+	border-radius: 6px;
+	padding: 10px 40px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #475a36;
+}

@@ -25,27 +25,40 @@
       </section>
 
       <form action="#">
-        <p>Let`s do this!</p>
-        <fieldset>
-          <label for="fname">First Name</label>
-          <input id="fname" type="text" name="fname" />
-          <label for="lname">Last Name</label>
-          <input id="lname" type="text" name="lname">
-        </fieldset>
-        <fieldset>
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email">
-          <label for="phone">Phone Number</label>
-          <input id="phone" type="number" name="phone">
-        </fieldset>
-        <fieldset>
-          <label for="password">Password</label>
-          <input id="password" type="password" name="password">
-          <label for="confirmPass">Confirm Password</label>
-          <input id="confirmPass" type="password" name="confirmPass">
-        </fieldset>
-
-        <div class="button-area">
+        <div class="formContainer">
+          <p>Let`s do this!</p>
+          <fieldset>
+            <div class="formCell">
+              <label for="fname">First Name</label>
+              <input id="fname" type="text" name="fname" required/>
+            </div>
+            <div class="formCell">
+              <label for="lname">Last Name</label>
+              <input id="lname" type="text" name="lname" required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="formCell">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required>
+            </div>
+            <div class="formCell">
+              <label for="phone">Phone Number</label>
+              <input id="phone" type="number" name="phone" required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="formCell">
+              <label for="password">Password</label>
+              <input id="password" type="password" name="password" required>
+            </div>
+            <div class="formCell">
+              <label for="confirmPass">Confirm Password</label>
+              <input id="confirmPass" type="password" name="confirmPass" required>
+            </div>      
+          </fieldset>
+        </div>
+        <div class="buttonArea">
           <button>Create Account</button>
           <p>Already have an account? <a href="#">Log In</a></p>
         </div>
